@@ -1,0 +1,147 @@
+# Political parties and movements referenced by data/candidates.yaml.
+# Candidates point to a party through its `id`.
+# A null `website` or `wikidata` means "not verified yet", never "does not exist".
+
+meta:
+  last_updated: 2026-10-14
+
+parties:
+  - id: rn
+    name: Rassemblement national
+    short_name: RN
+    website: https://rassemblementnational.fr
+    wikipedia: https://fr.wikipedia.org/wiki/Rassemblement_national
+    wikidata: null
+
+  - id: lfi
+    name: La France insoumise
+    short_name: LFI
+    website: https://lafranceinsoumise.fr
+    wikipedia: https://fr.wikipedia.org/wiki/La_France_insoumise
+    wikidata: null
+
+  - id: lr
+    name: Les Républicains
+    short_name: LR
+    website: https://republicains.fr
+    wikipedia: https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains
+    wikidata: null
+
+  - id: horizons
+    name: Horizons
+    short_name: Horizons
+    website: https://horizonsleparti.fr
+    wikipedia: https://fr.wikipedia.org/wiki/Horizons_(parti_politique)
+    wikidata: null
+
+  - id: renaissance
+    name: Renaissance
+    short_name: RE
+    website: https://parti-renaissance.fr
+    wikipedia: https://fr.wikipedia.org/wiki/Renaissance_(parti)
+    wikidata: null
+
+  - id: ps
+    name: Parti socialiste
+    short_name: PS
+    website: https://www.parti-socialiste.fr
+    wikipedia: https://fr.wikipedia.org/wiki/Parti_socialiste_(France)
+    wikidata: null
+
+  - id: place-publique
+    name: Place publique
+    short_name: PP
+    website: https://place-publique.eu
+    wikipedia: https://fr.wikipedia.org/wiki/Place_publique
+    wikidata: null
+
+  - id: grs
+    name: Gauche républicaine et socialiste
+    short_name: GRS
+    website: null
+    wikipedia: https://fr.wikipedia.org/wiki/Gauche_r%C3%A9publicaine_et_socialiste
+    wikidata: null
+
+  - id: pcf
+    name: Parti communiste français
+    short_name: PCF
+    website: https://www.pcf.fr
+    wikipedia: https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais
+    wikidata: null
+
+  - id: les-ecologistes
+    name: Les Écologistes
+    short_name: LE
+    website: https://lesecologistes.fr
+    wikipedia: https://fr.wikipedia.org/wiki/Les_%C3%89cologistes
+    wikidata: null
+
+  - id: generation-ecologie
+    name: Génération écologie
+    short_name: GE
+    website: https://www.generationecologie.fr
+    wikipedia: https://fr.wikipedia.org/wiki/G%C3%A9n%C3%A9ration_%C3%A9cologie
+    wikidata: null
+
+  - id: debout
+    name: Debout !
+    short_name: Debout !
+    website: null
+    wikipedia: null
+    wikidata: null
+
+  - id: lutte-ouvriere
+    name: Lutte ouvrière
+    short_name: LO
+    website: https://www.lutte-ouvriere.org
+    wikipedia: https://fr.wikipedia.org/wiki/Lutte_ouvri%C3%A8re
+    wikidata: null
+
+  - id: reconquete
+    name: Reconquête
+    short_name: REC
+    website: https://www.parti-reconquete.fr
+    wikipedia: https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)
+    wikidata: null
+
+  - id: debout-la-france
+    name: Debout la France
+    short_name: DLF
+    website: https://www.debout-la-france.fr
+    wikipedia: https://fr.wikipedia.org/wiki/Debout_la_France
+    wikidata: null
+
+  - id: upr
+    name: Union populaire républicaine
+    short_name: UPR
+    website: https://www.upr.fr
+    wikipedia: https://fr.wikipedia.org/wiki/Union_populaire_r%C3%A9publicaine_(2007)
+    wikidata: null
+
+  - id: les-patriotes
+    name: Les Patriotes
+    short_name: LP
+    website: https://les-patriotes.fr
+    wikipedia: https://fr.wikipedia.org/wiki/Les_Patriotes
+    wikidata: null
+
+  - id: nouvelle-energie
+    name: Nouvelle Énergie
+    short_name: NE
+    website: null
+    wikipedia: null
+    wikidata: null
+
+  - id: la-france-humaine-et-forte
+    name: La France humaine et forte
+    short_name: null
+    website: null
+    wikipedia: null
+    wikidata: null
+
+  - id: nous-sommes-la-france
+    name: Nous sommes la France
+    short_name: null
+    website: null
+    wikipedia: null
+    wikidata: null

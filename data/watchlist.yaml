@@ -1,0 +1,73 @@
+# Figures who may run but have not explicitly declared (or whose
+# declaration could not be confirmed). Used by the watch-candidates skill:
+# when one of them declares, move the record to data/candidates.yaml.
+
+meta:
+  last_updated: 2026-10-14
+
+people:
+  - name: Xavier Bertrand
+    party: lr
+    status: announced_intent
+    notes: >-
+      A dit « Je le serai » fin août 2026, comme candidat indépendant.
+      Déclaration formelle annoncée pour la fin de l'année.
+    sources:
+      - https://lcp.fr/actualites/2027-figure-de-la-droite-xavier-bertrand-confirme-qu-il-sera-candidat-a-l-election
+
+  - name: Bernard Cazeneuve
+    party: null
+    status: announced_intent
+    notes: >-
+      Volonté « pleine et entière » d'être candidat (mai 2026), refuse la
+      primaire. Pas de déclaration formelle trouvée après fin juillet 2026.
+    sources:
+      - https://lcp.fr/actualites/presidentielle-2027-l-objectif-de-bernard-cazeneuve-est-de-devenir-president-de-la
+
+  - name: Dominique de Villepin
+    party: null
+    status: potential
+    notes: Fondateur de La France humaniste, collecte des parrainages, pas encore déclaré (août 2026).
+    sources:
+      - https://www.euronews.com/2026/08/30/french-presidential-race-de-villepin-set-to-run-faure-enters-socialist-primary
+
+  - name: Bruno Le Maire
+    party: null
+    status: potential
+    notes: A annoncé une décision « en octobre » 2026.
+    sources:
+      - https://lcp.fr/actualites/presidentielle-2027-bruno-le-maire-dira-en-octobre-s-il-est-candidat-437967
+
+  - name: Jordan Bardella
+    party: rn
+    status: fallback
+    notes: Candidat du RN si Marine Le Pen était empêchée (pourvoi en cassation en cours).
+    sources: []
+
+  - name: Anasse Kazib
+    party: null
+    status: unconfirmed
+    notes: Révolution permanente. Sources contradictoires sur une déclaration formelle.
+    sources:
+      - https://www.sudradio.fr/politique/presidentielle-2027-le-point-sur-toutes-les-candidatures
+
+  - name: Francis Lalanne
+    party: null
+    status: unconfirmed
+    notes: Cité comme déclaré par un seul agrégateur, à confirmer.
+    sources: []
+
+  - name: Clara Egger
+    party: null
+    status: unconfirmed
+    notes: Solution démocratique. Cité comme déclarée par un seul agrégateur, à confirmer.
+    sources: []
+
+  - name: Philippe Brun
+    party: ps
+    status: unconfirmed
+    notes: >-
+      Avait annoncé sa candidature fin juin 2026, puis a été exclu de la
+      primaire. Statut actuel à vérifier.
+    sources:
+      - https://www.publicsenat.fr/actualites/politique/il-y-aura-cinq-candidats-a-la-primaire-ps-mais-pas-philippe-brun-exclu-suite-a-des-accusations-de-violence

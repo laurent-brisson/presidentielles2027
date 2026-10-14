@@ -1,0 +1,551 @@
+# Declared candidates for the 2027 French presidential election.
+#
+# Scope: people who publicly and explicitly announced their candidacy,
+# as reported by at least one media outlet. Rumoured or undecided
+# figures live in data/watchlist.yaml until they declare.
+#
+# The official list is only fixed by the Conseil constitutionnel after
+# the 500 sponsorships ("parrainages") are validated, in spring 2027.
+#
+# Conventions:
+#   - Keys are in English, values in French.
+#   - Dates use ISO 8601 (YYYY-MM-DD). Age is derived from birth_date.
+#   - `party` and `supporting_parties` reference ids in data/parties.yaml.
+#   - null means "not verified yet", never "does not exist".
+#   - `verification.to_verify` lists the fields still needing a check
+#     against a primary source.
+#
+# Candidacy status values:
+#   declared                personal announcement
+#   invested                designated by a party vote or a primary
+#   sponsorships_validated  on the official Conseil constitutionnel list
+#   withdrawn               candidacy abandoned (record kept for history)
+
+meta:
+  election: Élection présidentielle française de 2027
+  first_round: 2027-04-18
+  second_round: 2027-05-02
+  last_updated: 2026-10-14
+
+candidates:
+  - id: edouard-philippe
+    last_name: Philippe
+    first_name: Édouard
+    birth_date: 1970-11-28
+    birth_place: Rouen
+    wikipedia: https://fr.wikipedia.org/wiki/%C3%89douard_Philippe
+    wikidata: null
+    current_role: Maire du Havre, président d'Horizons
+    party: horizons
+    supporting_parties: []
+    candidacy:
+      status: declared
+      declaration_date: 2024-09-03
+      notes: Première candidature déclarée, annoncée dès septembre 2024.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://www.touteleurope.eu/vie-politique-des-etats-membres/presidentielle-2027-qui-sont-les-candidats-deja-declares/
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [declaration_date, wikidata, links]
+
+  - id: bruno-retailleau
+    last_name: Retailleau
+    first_name: Bruno
+    birth_date: 1960-11-20
+    birth_place: Cholet
+    wikipedia: https://fr.wikipedia.org/wiki/Bruno_Retailleau
+    wikidata: null
+    current_role: Président des Républicains
+    party: lr
+    supporting_parties: []
+    candidacy:
+      status: invested
+      declaration_date: 2026-02-12
+      notes: >-
+        Candidature annoncée en février 2026, puis désigné par les adhérents
+        LR le 19 avril 2026 avec 73,8 % des voix (participation 60,01 %).
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://lcp.fr/actualites/presidentielle-bruno-retailleau-choisi-comme-candidat-officiel-des-republicains-435440
+        accessed: 2026-10-14
+      - url: https://www.publicsenat.fr/actualites/politique/presidentielle-bruno-retailleau-designe-candidat-par-les-adherents-lr
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [declaration_date, wikidata, links]
+
+  - id: david-lisnard
+    last_name: Lisnard
+    first_name: David
+    birth_date: 1969-01-08
+    birth_place: Cannes
+    wikipedia: https://fr.wikipedia.org/wiki/David_Lisnard
+    wikidata: null
+    current_role: Maire de Cannes
+    party: nouvelle-energie
+    supporting_parties: []
+    candidacy:
+      status: declared
+      declaration_date: 2026-03-31
+      notes: Annonce sur France 2, le jour de son départ des Républicains.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://lcp.fr/actualites/je-suis-candidat-david-lisnard-quitte-lr-et-relance-le-debat-sur-une-primaire-a-droite
+        accessed: 2026-10-14
+      - url: https://www.publicsenat.fr/actualites/politique/presidentielle-2027-david-lisnard-maire-de-cannes-annonce-sa-candidature-et-quitte-officiellement-les-lr
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [wikidata, links]
+
+  - id: gabriel-attal
+    last_name: Attal
+    first_name: Gabriel
+    birth_date: 1989-03-16
+    birth_place: Clamart
+    wikipedia: https://fr.wikipedia.org/wiki/Gabriel_Attal
+    wikidata: null
+    current_role: Secrétaire général de Renaissance
+    party: renaissance
+    supporting_parties: []
+    candidacy:
+      status: declared
+      declaration_date: 2026-05-22
+      notes: Annonce à Mur-de-Barrez (Aveyron).
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://lcp.fr/actualites/presidentielle-2027-gabriel-attal-officialise-sa-candidature-436721
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [wikidata, links]
+
+  - id: marine-le-pen
+    last_name: Le Pen
+    first_name: Marine
+    birth_date: 1968-08-05
+    birth_place: Neuilly-sur-Seine
+    wikipedia: https://fr.wikipedia.org/wiki/Marine_Le_Pen
+    wikidata: null
+    current_role: Députée du Pas-de-Calais, présidente du groupe RN à l'Assemblée nationale
+    party: rn
+    supporting_parties: []
+    candidacy:
+      status: declared
+      declaration_date: 2026-07-07
+      notes: >-
+        A confirmé maintenir sa candidature après l'arrêt de la cour d'appel
+        de Paris du 7 juillet 2026, qui ramène l'inéligibilité ferme à
+        15 mois. Pourvoi en cassation en cours. Jordan Bardella reste le
+        candidat de repli du RN.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://ici.radio-canada.ca/nouvelle/2267416/marine-le-pen-peine-presidentielle-france
+        accessed: 2026-10-14
+      - url: https://www.rts.ch/info/monde/2026/article/condamnee-en-appel-marine-le-pen-pourra-se-presenter-en-2027-29296439.html
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [declaration_date, current_role, wikidata, links]
+
+  - id: eric-zemmour
+    last_name: Zemmour
+    first_name: Éric
+    birth_date: 1958-08-31
+    birth_place: Montreuil
+    wikipedia: https://fr.wikipedia.org/wiki/%C3%89ric_Zemmour
+    wikidata: null
+    current_role: Président de Reconquête
+    party: reconquete
+    supporting_parties: []
+    candidacy:
+      status: declared
+      declaration_date: 2026-09-17
+      notes: Annonce sur BFMTV.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://lcp.fr/actualites/presidentielle-2027-eric-zemmour-officialise-sa-candidature-441871
+        accessed: 2026-10-14
+      - url: https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [wikidata, links]
+
+  - id: nicolas-dupont-aignan
+    last_name: Dupont-Aignan
+    first_name: Nicolas
+    birth_date: 1961-03-07
+    birth_place: Paris
+    wikipedia: https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan
+    wikidata: null
+    current_role: Président de Debout la France
+    party: debout-la-france
+    supporting_parties: []
+    candidacy:
+      status: declared
+      declaration_date: null
+      notes: Candidature confirmée dès mars 2025 selon Slate, date exacte non vérifiée.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://www.slate.fr/politique/election-presidentielle-2027-liste-candidats-declares-interesses-primaire-gauche-droite-extreme-lfi-rn-lr-ps-macron
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [candidacy, wikidata, links]
+
+  - id: francois-asselineau
+    last_name: Asselineau
+    first_name: François
+    birth_date: 1957-09-14
+    birth_place: Paris
+    wikipedia: https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Asselineau
+    wikidata: null
+    current_role: Président de l'Union populaire républicaine
+    party: upr
+    supporting_parties: []
+    candidacy:
+      status: declared
+      declaration_date: null
+      notes: Campagne lancée selon Slate et Sud Radio, date d'annonce non trouvée.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [candidacy, wikidata, links]
+
+  - id: florian-philippot
+    last_name: Philippot
+    first_name: Florian
+    birth_date: 1981-10-24
+    birth_place: Croix
+    wikipedia: https://fr.wikipedia.org/wiki/Florian_Philippot
+    wikidata: null
+    current_role: Président des Patriotes
+    party: les-patriotes
+    supporting_parties: []
+    candidacy:
+      status: declared
+      declaration_date: 2026-05-09
+      notes: >-
+        Annonce sur France 2. S'est dit prêt à se retirer si Philippe de
+        Villiers se présentait.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027
+        accessed: 2026-10-14
+      - url: https://info.fr/florian-philippot-reunion-publique-millau-frexit-otan/
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [declaration_date, wikidata, links]
+
+  - id: jean-luc-melenchon
+    last_name: Mélenchon
+    first_name: Jean-Luc
+    birth_date: 1951-08-19
+    birth_place: Tanger (Maroc)
+    wikipedia: https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon
+    wikidata: null
+    current_role: Fondateur de La France insoumise
+    party: lfi
+    supporting_parties: []
+    candidacy:
+      status: invested
+      declaration_date: 2026-05-03
+      notes: >-
+        Annonce sur TF1 après validation par les élus insoumis le même jour.
+        Quatrième candidature (2012, 2017, 2022). Soutenu par le NPA.
+    links:
+      candidate_site: https://melenchon.fr
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://lcp.fr/actualites/presidentielle-jean-luc-melenchon-officialise-sa-candidature-pour-2027-435851
+        accessed: 2026-10-14
+      - url: https://lcp.fr/actualites/presidentielle-2027-philippe-poutou-renonce-a-se-presenter-et-se-range-derriere-jean-luc
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [wikidata, links]
+
+  - id: raphael-glucksmann
+    last_name: Glucksmann
+    first_name: Raphaël
+    birth_date: 1979-10-15
+    birth_place: Boulogne-Billancourt
+    wikipedia: https://fr.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann
+    wikidata: null
+    current_role: Député européen, coprésident de Place publique
+    party: place-publique
+    supporting_parties: [ps, grs]
+    candidacy:
+      status: invested
+      declaration_date: null
+      designation_date: 2026-10-11
+      notes: >-
+        Vainqueur au premier tour de la primaire de la gauche
+        sociale-démocrate (PS, Place publique, GRS) avec environ 66 % des voix,
+        devant Olivier Faure, Ségolène Royal, Emmanuel Maurel et Jérôme Guedj.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://www.touteleurope.eu/vie-politique-des-etats-membres/presidentielle-2027-l-eurodepute-raphael-glucksmann-remporte-largement-la-primaire-de-la-gauche-sociale-democrate/
+        accessed: 2026-10-14
+      - url: https://www.rts.ch/info/monde/2026/article/presidentielle-2027-en-france-raphael-glucksmann-candidat-de-la-gauche-sociale-democrate-29382642.html
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [declaration_date, wikidata, links]
+
+  - id: fabien-roussel
+    last_name: Roussel
+    first_name: Fabien
+    birth_date: 1969-04-16
+    birth_place: Béthune
+    wikipedia: https://fr.wikipedia.org/wiki/Fabien_Roussel
+    wikidata: null
+    current_role: Secrétaire national du PCF
+    party: pcf
+    supporting_parties: []
+    candidacy:
+      status: invested
+      declaration_date: 2026-09-06
+      notes: >-
+        Candidature validée par le vote des adhérents du 3 au 6 septembre 2026
+        (72,06 %), confirmée le 6 septembre sur TF1. Slogan « Vivre ».
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [wikidata, links]
+
+  - id: francois-ruffin
+    last_name: Ruffin
+    first_name: François
+    birth_date: 1975-10-18
+    birth_place: Calais
+    wikipedia: https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Ruffin
+    wikidata: null
+    current_role: Député de la Somme, fondateur de Debout !
+    party: debout
+    supporting_parties: []
+    candidacy:
+      status: declared
+      declaration_date: 2026-04-25
+      notes: >-
+        Lancement officiel à Lyon. Hors de la primaire sociale-démocrate,
+        maintient sa candidature après la victoire de Raphaël Glucksmann.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://www.lyoncapitale.fr/actualite/a-lyon-francois-ruffin-passera-un-entretien-dembauche-pour-lelysee-le-25-avril
+        accessed: 2026-10-14
+      - url: https://fr.news.yahoo.com/choix-repli-fran%C3%A7ois-ruffin-%C3%A0-075416276.html
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [declaration_date, current_role, wikidata, links]
+
+  - id: marine-tondelier
+    last_name: Tondelier
+    first_name: Marine
+    birth_date: 1986-08-13
+    birth_place: null
+    wikipedia: https://fr.wikipedia.org/wiki/Marine_Tondelier
+    wikidata: null
+    current_role: Secrétaire nationale des Écologistes
+    party: les-ecologistes
+    supporting_parties: []
+    candidacy:
+      status: invested
+      declaration_date: 2025-10-22
+      notes: >-
+        Annonce dans Le Nouvel Obs, désignée par le vote interne de
+        décembre 2025 (86 %). Exclue de la primaire sociale-démocrate,
+        son parti a validé en octobre 2026 une candidature autonome.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://reporterre.net/Presidentielle-2027-Marine-Tondelier-representera-Les-Ecologistes-a-la-primaire-de-la-gauche
+        accessed: 2026-10-14
+      - url: https://intelli.news/2026/10/13/presidentielle-2027-marine-tondelier-precipite-les-ecologistes-vers-une-candidature-autonome-et-incertaine/
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [birth_date, birth_place, wikidata, links]
+
+  - id: delphine-batho
+    last_name: Batho
+    first_name: Delphine
+    birth_date: 1973-03-23
+    birth_place: Paris
+    wikipedia: https://fr.wikipedia.org/wiki/Delphine_Batho
+    wikidata: null
+    current_role: Présidente de Génération écologie
+    party: generation-ecologie
+    supporting_parties: []
+    candidacy:
+      status: declared
+      declaration_date: 2025-11-25
+      notes: Annonce dans L'Obs, opposée à une primaire de la gauche.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://www.linfodurable.fr/lex-ministre-delphine-batho-candidate-la-presidentielle-pour-conjurer-la-rikikisation-de-lecologie
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [declaration_date, wikidata, links]
+
+  - id: karim-bouamrane
+    last_name: Bouamrane
+    first_name: Karim
+    birth_date: null
+    birth_place: null
+    wikipedia: https://fr.wikipedia.org/wiki/Karim_Bouamrane
+    wikidata: null
+    current_role: Maire de Saint-Ouen-sur-Seine
+    party: ps
+    supporting_parties: [la-france-humaine-et-forte]
+    candidacy:
+      status: declared
+      declaration_date: 2026-06-09
+      notes: >-
+        Annonce sur France Inter. Membre du PS mais candidat hors de la
+        primaire, avec son mouvement La France humaine et forte.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://lcp.fr/actualites/presidentielle-2027-qui-est-karim-bouamrane-le-maire-socialiste-de-saint-ouen-et-nouveau
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [birth_date, birth_place, wikidata, links]
+
+  - id: nathalie-arthaud
+    last_name: Arthaud
+    first_name: Nathalie
+    birth_date: 1970-02-23
+    birth_place: Peyrins
+    wikipedia: https://fr.wikipedia.org/wiki/Nathalie_Arthaud
+    wikidata: null
+    current_role: Porte-parole de Lutte ouvrière
+    party: lutte-ouvriere
+    supporting_parties: []
+    candidacy:
+      status: invested
+      declaration_date: 2025-12-08
+      notes: Désignée par le congrès de Lutte ouvrière de décembre 2025. Quatrième candidature.
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://www.slate.fr/politique/election-presidentielle-2027-liste-candidats-declares-interesses-primaire-gauche-droite-extreme-lfi-rn-lr-ps-macron
+        accessed: 2026-10-14
+      - url: https://beninwebtv.bj/nathalie-arthaud-lutte-ouvriere-candidate-a-la-presidentielle-2027/
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [declaration_date, wikidata, links]
+
+  - id: olivier-becht
+    last_name: Becht
+    first_name: Olivier
+    birth_date: null
+    birth_place: null
+    wikipedia: https://fr.wikipedia.org/wiki/Olivier_Becht
+    wikidata: null
+    current_role: Ancien ministre délégué au Commerce extérieur
+    party: null
+    supporting_parties: []
+    candidacy:
+      status: declared
+      declaration_date: 2026-09-24
+      notes: >-
+        Annonce dans Paris Match. Se revendique « à l'extrême centre »,
+        projet intitulé « Le Projet France, Refonder ou Périr ».
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://www.sudradio.fr/politique/qui-est-olivier-becht-cet-ancien-ministre-qui-se-lance-dans-la-course-a-lelysee
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [birth_date, birth_place, party, wikidata, links]
+
+  - id: natacha-polony
+    last_name: Polony
+    first_name: Natacha
+    birth_date: null
+    birth_place: null
+    wikipedia: https://fr.wikipedia.org/wiki/Natacha_Polony
+    wikidata: null
+    current_role: Directrice de la revue L'Audace
+    party: nous-sommes-la-france
+    supporting_parties: []
+    candidacy:
+      status: declared
+      declaration_date: 2026-10-14
+      notes: Annonce sur France Inter. Slogan « Nous sommes la France ».
+    links:
+      candidate_site: null
+      campaign_site: null
+      program: null
+    sources:
+      - url: https://www.cnews.fr/france/2026-10-14/presidentielle-2027-lessayiste-natacha-polony-annonce-sa-candidature-1934782
+        accessed: 2026-10-14
+      - url: https://actu.orange.fr/politique/presidentielle-2027-la-journaliste-natacha-polony-se-lance-dans-la-course-a-l-elysee-l-express-via-6medias-CNT000002sMNDt.html
+        accessed: 2026-10-14
+    verification:
+      status: partial
+      to_verify: [birth_date, birth_place, party, wikidata, links]

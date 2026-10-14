@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Candidates for the 2027 French presidential election",
+  "type": "object",
+  "required": ["meta", "candidates"],
+  "additionalProperties": false,
+  "$defs": {
+    "date": { "type": "string", "format": "date" },
+    "nullableDate": { "type": ["string", "null"], "format": "date" },
+    "nullableUrl": { "type": ["string", "null"], "pattern": "^https://" },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+  },
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["election", "last_updated"],
+      "properties": {
+        "election": { "type": "string" },
+        "first_round": { "$ref": "#/$defs/date" },
+        "second_round": { "$ref": "#/$defs/date" },
+        "last_updated": { "$ref": "#/$defs/date" }
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id", "last_name", "first_name", "birth_date", "wikipedia",
+          "party", "candidacy", "links", "sources", "verification"
+        ],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "last_name": { "type": "string", "minLength": 1 },
+          "first_name": { "type": "string", "minLength": 1 },
+          "birth_date": { "$ref": "#/$defs/nullableDate" },
+          "birth_place": { "type": ["string", "null"] },
+          "wikipedia": { "$ref": "#/$defs/nullableUrl" },
+          "wikidata": { "type": ["string", "null"], "pattern": "^Q[0-9]+$" },
+          "current_role": { "type": ["string", "null"] },
+          "party": { "oneOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
+          "supporting_parties": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+          "candidacy": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["status", "declaration_date"],
+            "properties": {
+              "status": {
+                "enum": ["declared", "invested", "sponsorships_validated", "withdrawn"]
+              },
+              "declaration_date": { "$ref": "#/$defs/nullableDate" },
+              "designation_date": { "$ref": "#/$defs/nullableDate" },
+              "withdrawal_date": { "$ref": "#/$defs/nullableDate" },
+              "notes": { "type": "string" }
+            }
+          },
+          "links": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "candidate_site": { "$ref": "#/$defs/nullableUrl" },
+              "campaign_site": { "$ref": "#/$defs/nullableUrl" },
+              "program": { "$ref": "#/$defs/nullableUrl" }
+            }
+          },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["url", "accessed"],
+              "properties": {
+                "url": { "type": "string", "pattern": "^https://" },
+                "accessed": { "$ref": "#/$defs/date" }
+              }
+            }
+          },
+          "verification": {
+            "type": "object",
+            "required": ["status"],
+            "properties": {
+              "status": { "enum": ["verified", "partial"] },
+              "to_verify": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    }
+  }
+}
