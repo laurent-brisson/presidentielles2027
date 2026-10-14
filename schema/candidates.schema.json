@@ -61,8 +61,10 @@
             "properties": {
               "candidate_site": { "$ref": "#/$defs/nullableUrl" },
               "campaign_site": { "$ref": "#/$defs/nullableUrl" },
-              "program": { "$ref": "#/$defs/nullableUrl" }
-            }
+              "program": { "$ref": "#/$defs/nullableUrl" },
+              "campaign_site_status": { "enum": ["confirmed", "probable", "not_found"] }
+            },
+            "required": ["campaign_site", "campaign_site_status"]
           },
           "sources": {
             "type": "array",

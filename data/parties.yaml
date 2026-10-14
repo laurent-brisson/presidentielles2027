@@ -86,7 +86,7 @@ parties:
   - id: debout
     name: Debout !
     short_name: Debout !
-    website: null
+    website: https://debout.fr
     wikipedia: null
     wikidata: null
 
@@ -128,7 +128,7 @@ parties:
   - id: nouvelle-energie
     name: Nouvelle Énergie
     short_name: NE
-    website: null
+    website: https://www.unenouvelleenergie.fr
     wikipedia: null
     wikidata: null
 

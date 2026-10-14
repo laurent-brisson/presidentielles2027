@@ -40,6 +40,11 @@ candidates go in that file. Everyone else stays in `data/watchlist.yaml`.
    - **Filling gaps**: when a source confirms a field in `to_verify`
      (birth date, Wikidata QID, websites, program URL), fill it and drop it
      from the list. When the list is empty, set `verification.status: verified`.
+   - **Campaign sites**: for every record whose `links.campaign_site_status`
+     is `not_found` or `probable`, search for the site again. Upgrade to
+     `confirmed` only when the press or the candidate's own declaration
+     cites the address. Aggregators (elyseescope, votons-2027, repere2027...)
+     and fan sites never count.
    - Always add the source URL with `accessed: <today>`.
 
 5. Set `meta.last_updated` to today in every file you touched, then run
